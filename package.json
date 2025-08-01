@@ -1,0 +1,14 @@
+{
+  "scripts": {
+    "mongo": "start start_db.bat",
+    "client": "npm start --prefix client",
+    "server": "npm start --prefix server",
+    "dev": "concurrently \"npm run mongo\" \"npm run server\" \"npm run client\""
+  },
+  "dependencies": {
+    "create-react-app": "^5.1.0"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.0"
+  }
+}
